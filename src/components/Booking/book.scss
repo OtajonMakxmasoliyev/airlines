@@ -1,0 +1,129 @@
+.booking {
+    width: 50%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 2px -6px 5px 3px rgba(0, 0, 0, 0.26);
+    border-radius: 7px;
+
+    .absolute {
+        position: absolute;
+        z-index: 3;
+        top: -28px;
+        left: 0;
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 24px;
+        line-height: 16px;
+        /* identical to box height, or 67% */
+
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.61);
+        backdrop-filter: blur(18.5px);
+    }
+
+    &_buy {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+
+        height: 30px;
+        /* identical to box height, or 80% */
+
+
+        /* gray 1 */
+
+        color: #4E4E4E;
+
+        p {
+            font-family: 'Avenir-m';
+            font-style: normal;
+
+            font-size: 20px;
+            line-height: 26px;
+            padding: 0 20px;
+
+
+            /* identical to box height, or 80% */
+
+
+            /* gray 1 */
+
+            color: #4E4E4E;
+        }
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    &_types {
+
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        width: 90%;
+        justify-content: flex-start;
+
+    }
+}
+
+
+
+label {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    font-family: 'Avenir-m';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4E4E4E;
+}
+
+input[type="radio"] {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    width: 30px;
+    position: relative;
+}
+
+
+input[type="radio"]::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1.5px 1px rgba(0, 0, 0, 0.15), inset 0px 0px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    border-radius: 50%;
+    visibility: visible;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 12.5px;
+    height: 12.5px;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    left: 15%;
+    margin-top: 3%;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background-color: #FFA200;
+}

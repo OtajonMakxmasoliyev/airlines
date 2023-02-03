@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1,p{
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir/AvenirLTStd35Light/AvenirLTStd35Light.otf");
+}
+
+
+@font-face {
+  font-family: "Avenir-m";
+  src: url("./fonts/Avenir/AvenirLTStd45Book/AvenirLTStd45Book.otf");
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+.showcase {
+    width: 100%;
+    min-height: 550px;
+    background-image: url("../../images/showcaseback.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    box-sizing: border-box;
+
+    h1 {
+        text-align: right;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+    
+        /* or 33% */
+
+        text-align: right;
+        letter-spacing: 1px;
+
+        color: #FFFFFF;
+
+        
+    }
+
+}
